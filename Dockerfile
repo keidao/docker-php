@@ -16,7 +16,6 @@ RUN chmod +x /entrypoint.sh
 # 한국시간으로 변경
 RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
-
 EXPOSE 80
 EXPOSE 443
 
