@@ -15,7 +15,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 # 아파치 모듈 설치
 RUN a2enmod rewrite
-VOLUME ["/srv", "/etc/apache2/sites-available"], "/etc/apache2/sites-enabled"]
+VOLUME ["/srv", "/etc/apache2/sites-available", "/etc/apache2/sites-enabled"]
 EXPOSE 80
 EXPOSE 443
 
