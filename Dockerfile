@@ -20,12 +20,12 @@ EXPOSE 80
 EXPOSE 443
 
 # php composer 설치
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # ADD user.sh /user.sh
 # RUN chmod +x /user.sh
 # RUN /user.sh
 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT /entrypoint.sh
+# ADD entrypoint.sh /entrypoint.sh
+# RUN chmod +x /entrypoint.sh
+# ENTRYPOINT /entrypoint.sh
